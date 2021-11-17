@@ -1,19 +1,20 @@
 # dispersal-meta-analysis
 This repository contains code and data needed to reproduce the article:
 
-**Wu N. C., & Seebacher, F.** Does energetic physiology predict individual-level dispersal? (In prep) *Journal*, **9**, coaa138, DOI: https://doi.org/10.1093/conphys/coaa138
+**Wu N. C., & Seebacher, F.** Does physiology predict animal movement: activity, exploration, and dispersal? (In prep) *Journal*,
 
 **Raw data**
-- ucrit_all.csv  - Raw Ucrit data used for the analysis.
-- enzyme_all.csv - CS and LHD data used for the analysis.
+- ind_disp_raw_datal.csv - Raw data for individual movement used for the analysis.
+- pop_disp_raw_data.csv - Raw data for range expansion used for the analysis.
 
 **R codes**
-- BP-temp_analysis.R - Data cleaning, analysis and figure production.
+- disp_analysis.R - Data cleaning, meta-analysis and figure production.
+- spatial_map_analysis.R - Code to reproduce Figure 1.
 
 **Extra files**
 - CONPHYS-2020-161_SI.PDF - Supplementary file includes statistical outcomes and additional figures and descriptions from the main document.
 
 ## Abstract
-Plastic pollutants are novel environmental stressors that are now persistent components of natural ecosystems. Endocrine disrupting chemicals such as bisphenols that leach out of plastics can modify physiological responses of animals by interfering with hormone signalling. Here, we tested whether three commonly produced bisphenols, bisphenol A (BPA), bisphenol F (BPF) and bisphenol S (BPS), impair thermal acclimation of swimming performance and metabolic enzyme [citrate synthase (CS) and lactate dehydrogenase (LDH)] activities in adult zebrafish (*Danio rerio*). We found that exposure to 30-μg l⁻¹ BPF and BPS, but not BPA, reduced swimming performance, and no interactions between bisphenol exposure and acclimation (3 weeks to 18°C and 28°C) or acute test (18°C and 28°C) temperatures were found. BPA interacted with acclimation and acute test temperatures to determine CS activity, an indicator of mitochondrial density and aerobic metabolic capacity. BPS reduced CS activity and an interaction (at a one-tailed significance) between acclimation temperature and BPF exposure determined CS activity. LDH activity reflects anaerobic ATP production capacity, and BPA and BPF altered the effects of thermal acclimation and acute test temperatures on LDH activity. Our data show that all bisphenols we tested at ecologically relevant concentrations can disrupt the thermal responses of fish. BPS and BPF are used as environmentally safer alternatives to BPA, but our data show that these bisphenols are also of concern, particularly in thermally variable environments.
+Activity and exploration of novel environments determine local interactions, and larger scale dispersal can affect gene flow between populations. Physiology determines movement capacity and links animal movement to environmental variation. If physiology predicted movement, physiological traits could be used as indicators of the propensity for movement and dispersal in different environments. In two related meta-analyses, we aimed to establish the state-of-knowledge of the extent to which physiology mediates movement. Firstly, we determined whether physiological traits underlie individual movement, which we classified into activity within familiar environments, exploration of novel environments, and dispersal (88 studies).  Secondly, we determined whether physiological characteristics differed between individuals at the core of the distribution and those at the range edges (43 studies). Locomotor performance and metabolism affected individual movement, and differed between the range core and edge. Corticosterone levels and immunity were also greater at the range edge compared to the core. These physiological differences were particularly pronounced in birds and amphibians, and physiological differences between distributional core and edge increased with increasing time since separation. Additionally, there was a trend for dispersal to occur in the direction of warmer environments. Our analysis indicates that the range of different physiological traits and geographical areas are only sparsely represented in the literature. Future work should focus on broadening the physiological and geographical representation, particularly because the geographical areas worst affected by climate change are also the most undersampled. Physiological differences between the core and edge of distributions may reflect the cause or effect of dispersal, and it remains unresolved whether physiological differences are mediated genetically or reflect plasticity.
 
-**Keywords:** Locomotion, metabolism, plastic pollution, temperature, thermal acclimation
+**Keywords:** energetics, locomotor, metabolism, performance, meta-analysis, range edge, environmental change

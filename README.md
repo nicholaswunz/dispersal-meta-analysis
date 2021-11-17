@@ -1,7 +1,7 @@
-# dispersal-meta-analysis
+# Does physiology predict dispersal?
 This repository contains code and data needed to reproduce the article:
 
-**Wu N. C., & Seebacher, F.** Does physiology predict animal movement: activity, exploration, and dispersal? (In prep) *Journal*,
+**Wu N. C., & Seebacher, F.** Does physiology predict animal movement: activity, exploration, and dispersal? (In review) *Communications Biology*,
 
 **Raw data**
 - ind_disp_raw_datal.csv - Raw data for individual movement used for the analysis.

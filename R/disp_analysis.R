@@ -31,7 +31,6 @@ mytheme <- function() {
 # Load data
 ind_raw_data <- read.csv("ind_disp_raw_data.csv")
 pop_raw_data <- read.csv("pop_disp_raw_data.csv")
-str(ind_raw_data)
 
 # Cleaning individual raw data
 ind_data_clean <- ind_raw_data %>% 
@@ -486,7 +485,7 @@ temp_plot <- ggplot(data = temp_marg_eff, aes(x = x, y = exp(predicted))) +
   geom_line(aes(), size = 1, linetype = "dashed", show.legend = FALSE) +
   geom_point(data = pop_data_clean, aes(x = temp_diff, y = exp(lnRate), colour = disp_mode), size = 2) +
   ylab(expression("Rate of dispersal (km y"^"-1"*")")) +
-  xlab("Temperature difference between core and expansion front (°C)") +
+  xlab("Temperature difference between core and expansion front (Â°C)") +
   scale_color_manual(values = c("#FFA076", "#E54787", "#7D1D67")) +
   mytheme()
 

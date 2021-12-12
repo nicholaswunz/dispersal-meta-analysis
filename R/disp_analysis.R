@@ -150,11 +150,10 @@ ind_overall_model <- brms::brm(Zr | se(Zr_v) ~ disp_trait-1 + thermal_strategy +
 # Check convergence
 brms::pp_check(ind_overall_model)
 
+# Model summary
 summary(ind_overall_model)
 # Population-Level Effects = average effects
 # Group-Level Effects = heterogeneity
-
-brms::fixef(ind_overall_model)
 
 # Heterogeneity
 ind_overall_post <- posterior_samples(ind_overall_model) # extracting the posterior distributions from our models
@@ -206,7 +205,6 @@ I2_species_Zr_est <- round(c(MCMCglmm::posterior.mode(I2_species_Zr),
 
 # Funnel plot
 metafor::funnel(x = ind_data_clean$Zr, sei = ind_data_clean$Zr_sei, pch = 1)
-
 
 # TRAIT - ACTVITY #
 activity_trait_model <- brms::brm(Zr | se(Zr_v) ~ -1 + trait + thermal_strategy + Zr_sei + year_centre + (1 | es_ID) + (1 | study_ID) + (1 | species_OTL) + (1|gr(species, cov = phylo)),
@@ -477,7 +475,6 @@ rate_plot <- ggplot(data = rate_marg_eff, aes(x = x, y = exp(predicted))) +
 
 # Extract temp difference model predictions
 temp_marg_eff <- as.data.frame(ggeffects::ggpredict(temp_model, terms = c("temp_diff[sample=50]")))
-ggeffects::ggpredict(temp_model, terms = c("temp_diff[sample=50]"))
 
 # Plot
 temp_plot <- ggplot(data = temp_marg_eff, aes(x = x, y = exp(predicted))) +
@@ -520,7 +517,7 @@ time_model <- brms::brm(bf(abslnRR ~ lnTime * disp_mode + (1 | study_ID) + (1 | 
 brms::pp_check(time_model)
 
 # Model summary
-summary(time_model) # no difference between dispersal mode. Therefore visualise overall model
+summary(time_model) 
 
 # Extract model predictions
 time_marg_eff <- as.data.frame(ggeffects::ggpredict(time_model, terms = c("lnTime[sample=40]"))) 

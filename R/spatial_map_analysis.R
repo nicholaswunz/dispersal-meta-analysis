@@ -4,7 +4,6 @@ library(cowplot)
 library(dplyr)
 library(sp)
 library(tidyverse)
-library(ggeffects)
 
 ## FIG 1 - STUDY LOCATIONS & DATA SUMMARY ##----------------------------------------------------------------------------------------
 # Raw data from disp_analysis.R

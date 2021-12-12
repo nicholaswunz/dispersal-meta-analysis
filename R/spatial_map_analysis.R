@@ -8,8 +8,8 @@ library(ggeffects)
 
 ## FIG 1 - STUDY LOCATIONS & DATA SUMMARY ##----------------------------------------------------------------------------------------
 # Raw data from disp_analysis.R
-world    <- rgdal::readOGR("C:/Users/chwu6540/Dropbox (Personal)/Turtle project/Data/ne_50m_land/ne_50m_land.shp")
-world_df <- sp::SpatialPolygonsDataFrame(world, world@data) #turn the data into a spatial data frame
+world    <- rgdal::readOGR("your file name/ne_50m_land.shp") # shape file from Natural Earth: https://github.com/nvkelso/natural-earth-vector/blob/master/50m_physical/ne_50m_land.shp
+world_df <- sp::SpatialPolygonsDataFrame(world, world@data) # turn the data into a spatial data frame
 
 str(ind_data_clean)
 ind_map <- ggplot() +

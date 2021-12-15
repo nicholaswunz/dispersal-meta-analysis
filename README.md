@@ -1,7 +1,7 @@
 # Does physiology predict dispersal?
 This repository contains code and data needed to reproduce the article:
 
-**Wu N. C., & Seebacher, F.** Physiology can predict animal activity, exploration, and dispersal (Accepted) *Communications Biology*,
+**Wu N. C., & Seebacher, F.** (Accepted) Physiology can predict animal activity, exploration, and dispersal. *Communications Biology*,
 
 **Raw data**
 - ind_disp_raw_data.csv - Raw data for individual movement used for the analysis.

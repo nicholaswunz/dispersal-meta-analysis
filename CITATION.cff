@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+authors:
+  - family-names: "Wu"
+    given-names: "Nicholas C."
+    orcid: "https://orcid.org/0000-0002-7130-1279"
+  - family-names: "Seebacher"
+    given-names: "Frank"
+    orcid: "https://orcid.org/0000-0002-2281-9311"
+title: "Physiology can predict animal activity, exploration, and dispersal"
+version: 1.0.0
+date-released: 2022-02-03
+url: "https://github.com/nicholaswunz/dispersal-meta-analysis"
